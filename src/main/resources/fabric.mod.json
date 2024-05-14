@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "cornfelineorigin",
+    "version": "${version}",
+    "name": "CornFelineOrigin",
+    "description": "Modified version of the Feline for Corn",
+    "authors": [
+        "BluSpring"
+    ],
+    "contact": {
+        "website": "https://bluspring.xyz",
+        "repo": "https://github.com/BluSpring/CornFelineOrigin"
+    },
+    "license": "MIT",
+    "icon": "assets/cornfelineorigin/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "xyz.bluspring.cornfelineorigin.client.CornFelineOriginClient"
+        ],
+        "main": [
+            "xyz.bluspring.cornfelineorigin.CornFelineOrigin"
+        ],
+        "appleskin": [
+            "xyz.bluspring.cornfelineorigin.integration.appleskin.CornFelineAppleSkinIntegration"
+        ]
+    },
+    "mixins": [
+        "cornfelineorigin.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
